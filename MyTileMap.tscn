@@ -1,0 +1,455 @@
+[gd_scene load_steps=28 format=3 uid="uid://k2gwg1jk46wj"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_0yvjr"]
+[ext_resource type="Script" path="res://my_tile_map.gd" id="1_nrvcu"]
+[ext_resource type="Script" path="res://menu2.gd" id="2_5p1kb"]
+[ext_resource type="Script" path="res://menu 3.gd" id="3_yf7i2"]
+[ext_resource type="Texture2D" uid="uid://bbga8eyaklyv8" path="res://0.png" id="4_u48wc"]
+[ext_resource type="Texture2D" uid="uid://dl8jgqxijaot1" path="res://1.png" id="5_jd8j6"]
+[ext_resource type="Texture2D" uid="uid://cjfethmcqtbji" path="res://2.png" id="6_u2ce1"]
+[ext_resource type="Texture2D" uid="uid://dmggl8i4ua522" path="res://3.png" id="7_kber3"]
+[ext_resource type="Texture2D" uid="uid://b2ymuw7kfi6ce" path="res://4.png" id="8_eh4om"]
+[ext_resource type="Texture2D" uid="uid://deksiolhy46gt" path="res://5.png" id="9_b1076"]
+[ext_resource type="Texture2D" uid="uid://d4a2vpmshrnsm" path="res://6.png" id="10_h1i2o"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0qu5a"]
+resource_name = "0"
+texture = ExtResource("4_u48wc")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rg2am"]
+resource_name = "1"
+texture = ExtResource("5_jd8j6")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_agfi8"]
+resource_name = "2"
+texture = ExtResource("6_u2ce1")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r05yu"]
+resource_name = "3"
+texture = ExtResource("7_kber3")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cqbyf"]
+resource_name = "4"
+texture = ExtResource("8_eh4om")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yfp76"]
+resource_name = "5"
+texture = ExtResource("9_b1076")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_a04ed"]
+resource_name = "6"
+texture = ExtResource("10_h1i2o")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_utehb"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_0qu5a")
+sources/1 = SubResource("TileSetAtlasSource_rg2am")
+sources/2 = SubResource("TileSetAtlasSource_agfi8")
+sources/3 = SubResource("TileSetAtlasSource_r05yu")
+sources/4 = SubResource("TileSetAtlasSource_cqbyf")
+sources/5 = SubResource("TileSetAtlasSource_yfp76")
+sources/6 = SubResource("TileSetAtlasSource_a04ed")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4inxr"]
+resource_name = "0"
+texture = ExtResource("4_u48wc")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1lf65"]
+resource_name = "1"
+texture = ExtResource("5_jd8j6")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qb58j"]
+resource_name = "2"
+texture = ExtResource("6_u2ce1")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o6tlu"]
+resource_name = "3"
+texture = ExtResource("7_kber3")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ww4ap"]
+resource_name = "4"
+texture = ExtResource("8_eh4om")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o8wln"]
+resource_name = "5"
+texture = ExtResource("9_b1076")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qtqhr"]
+resource_name = "6"
+texture = ExtResource("10_h1i2o")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_f82at"]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_4inxr")
+sources/1 = SubResource("TileSetAtlasSource_1lf65")
+sources/2 = SubResource("TileSetAtlasSource_qb58j")
+sources/3 = SubResource("TileSetAtlasSource_o6tlu")
+sources/4 = SubResource("TileSetAtlasSource_ww4ap")
+sources/5 = SubResource("TileSetAtlasSource_o8wln")
+sources/6 = SubResource("TileSetAtlasSource_qtqhr")
+
+[node name="TileMapLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_utehb")
+rendering_quadrant_size = 64
+script = ExtResource("1_nrvcu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+process_mode = 3
+
+[node name="MyAcceptDialog" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+mode = 3
+size = Vector2i(500, 100)
+unresizable = true
+min_size = Vector2i(500, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Menu" type="Panel" parent="CanvasLayer"]
+script = ExtResource("1_0yvjr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RandomButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RandomLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EraseButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EraseLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LeftButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RightButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CellButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CellLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ClimberButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ClimberLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PulsarButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PulsarLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BlinkerButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BlinkerLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HatterButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HatterLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="FlowerButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlowerLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ShipButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ShipLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BrushButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BrushLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BombButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BombLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CloverButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CloverLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SunflowerButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SunflowerLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="WallpaperButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WallpaperLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TwoCloverButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TwoCloverLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LilyButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LilyLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="OptionsButton" type="TextureButton" parent="CanvasLayer/Menu"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OptionsLabel" type="Label" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = -1
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+
+[node name="Menu2" type="Panel" parent="CanvasLayer2"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_5p1kb")
+
+[node name="RunButton" type="TextureButton" parent="CanvasLayer2/Menu2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DirectionButton" type="TextureButton" parent="CanvasLayer2/Menu2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CanvasLayer3" type="CanvasLayer" parent="."]
+
+[node name="Menu3" type="Panel" parent="CanvasLayer3"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_yf7i2")
+
+[node name="BackButton" type="Button" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="SymmetryButton" type="CheckButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+
+[node name="ShadowButton" type="CheckButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+
+[node name="LayersButton" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="LayersLabel" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TypeButton" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="TypeLabel" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColourButton1" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="ColourLabel1" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColourButton2" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="ColourLabel2" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColourButton3" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="ColourLabel3" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColourButton4" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="ColourLabel4" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="ColourButton5" type="OptionButton" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="ColourLabel5" type="Label" parent="CanvasLayer3/Menu3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Layer1" type="TileMapLayer" parent="."]
+use_parent_material = true
+tile_set = SubResource("TileSet_f82at")
+rendering_quadrant_size = 64
